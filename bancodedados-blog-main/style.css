@@ -1,0 +1,176 @@
+/* ============================================================
+   🎨 PAINEL DE PERSONALIZAÇÃO - MUDE AS CORES AQUI SE QUISER:
+   ============================================================ */
+   :root {
+    --cor-titulo-blog: #03ff64;       /* Cor do título principal "Meu blog" */
+    --cor-fundo-introducao: #023e8a;    /* Cor da caixa de Introdução */
+    --cor-fundo-sobre-mim: #d94e34;     /* Cor da caixa Sobre Mim */
+    --cor-fundo-blog-posts: #4a148c;    /* Cor da caixa de Últimos Posts */
+    --cor-fundo-contato: #a0aec0;       /* Cor da letra do rodapé */
+    
+    /* 🌟 NOVAS OPÇÕES PARA OS BOTÕES AMARELOS DO TOPO: */
+    --cor-fundo-botoes-topo: #03ff64;   /* Mude aqui a cor amarela dos botões */
+    --cor-letra-botoes-topo: #023e8a;   /* Mude aqui a cor da letra dentro dos botões */
+}
+
+/* ============================================================
+   ESTILO DO SITE (MANTIDO EXATAMENTE COMO VOCÊ MANDOU)
+   ============================================================ */
+
+/* Fundo do site modificado por você para branco */
+body {
+    background-color: #ffffff; 
+    color: #ffffff;            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal do Blog usando a cor personalizável do painel */
+h1 {
+    color: var(--cor-titulo-blog); 
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;  
+}
+
+/* Força os títulos das caixas a ficarem brancos para dar leitura */
+h2, h3 {
+    color: #ffffff !important;
+    margin-top: 0;
+}
+
+/* --- SEÇÕES COM CORES FORTES E EM HARMONIA --- */
+
+/* Seção de Introdução usando a cor personalizável do painel */
+#menu {
+    background-color: var(--cor-fundo-introducao); 
+    border-bottom: 5px solid #0077b6;
+}
+
+/* Seção Sobre Mim usando a cor personalizável do painel */
+#sobre {
+    background-color: var(--cor-fundo-sobre-mim); 
+    border-bottom: 5px solid #b8331b;
+}
+
+/* Seção dos Últimos Posts usando a cor personalizável do painel */
+#posts {
+    background-color: var(--cor-fundo-blog-posts); 
+    border-bottom: 5px solid #7b1fa2;
+}
+
+/* Caixas de posts internos */
+article {
+    background-color: #6a1b9a;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* Menu Lateral de Navegação (Azul Petróleo Escuro) */
+aside {
+    background-color: #14213d; 
+    border-bottom: 5px solid #fca311; 
+}
+
+/* Configuração padrão para todas as grandes caixas */
+section, aside {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    color: #ffffff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* --- LINKS DO MENU DO TOPO PERSONALIZADOS --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    /* Usando as novas variáveis configuradas lá no topo */
+    background-color: var(--cor-fundo-botoes-topo); 
+    color: var(--cor-letra-botoes-topo);            
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: var(--cor-fundo-botoes-topo);
+    transform: scale(1.05);
+}
+
+/* --- MENU LATERAL TOTALMENTE CORRIGIDO --- */
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+aside a {
+    display: block;
+    background-color: #ffffff;  
+    color: #14213d;             
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s;
+}
+
+aside a:hover {
+    background-color: #fca311; 
+    color: #ffffff;
+}
+
+/* Rodapé usando a cor personalizável do painel para o texto */
+footer {
+    text-align: center;
+    color: var(--cor-fundo-contato);
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* --- CONFIGURAÇÃO DE IMAGENS --- */
+.bloco-foto {
+    max-width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.bloco-foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+.bloco-foto figcaption {
+    font-size: 14px;
+    color: #ffffff; 
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.imagem-abaixo-do-titulo { margin-top: 5px; margin-bottom: 20px; }
+.imagem-no-final { margin-top: 25px; margin-bottom: 10px; }
